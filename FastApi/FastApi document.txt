@@ -1,0 +1,17 @@
+ON Git Bash:
+cd api
+ll
+less requirements.txt
+pip install -r requirements.txt
+python.exe -m pip install --upgrade pip
+pip install tensorflow==2.18.0 keras==3.6.0
+pip install fastapi uvicorn
+
+run: 
+python -m uvicorn main:app --reload
+uvicorn main:app --reload
+
+
+http://127.0.0.1:8000
+http://127.0.0.1:8000/docs
+http://127.0.0.1:8000/redoc
